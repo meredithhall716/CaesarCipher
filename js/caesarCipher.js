@@ -1,5 +1,5 @@
 exports.caesarCipher = function(str, num) {
-    let result = []
+    let result = ""
   
     if (num === 0) {
       return str
@@ -32,7 +32,7 @@ exports.caesarCipher = function(str, num) {
         }
         
         }
-    result.push(asciiVal)
+    result += asciiVal
     }
-return result.join("")
+return result
 }
